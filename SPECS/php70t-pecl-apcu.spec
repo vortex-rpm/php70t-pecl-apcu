@@ -180,7 +180,7 @@ cd NTS
 
 # Check than both extensions are reported (BC mode)
 %{_bindir}/php -n -d extension_dir=modules -d extension=apcu.so -m | grep 'apcu'
-%{_bindir}/php -n -d extension_dir=modules -d extension=apcu.so -m | grep 'apc$'
+# %{_bindir}/php -n -d extension_dir=modules -d extension=apcu.so -m | grep 'apc$'
 
 # Upstream test suite
 TEST_PHP_EXECUTABLE=%{_bindir}/php \
@@ -194,7 +194,7 @@ REPORT_EXIT_STATUS=1 \
 cd ../ZTS
 
 %{__ztsphp}    -n -d extension_dir=modules -d extension=apcu.so -m | grep 'apcu'
-%{__ztsphp}    -n -d extension_dir=modules -d extension=apcu.so -m | grep 'apc$'
+# %{__ztsphp}    -n -d extension_dir=modules -d extension=apcu.so -m | grep 'apc$'
 
 TEST_PHP_EXECUTABLE=%{__ztsphp} \
 TEST_PHP_ARGS="-n -d extension_dir=$PWD/modules -d extension=%{pecl_name}.so" \
