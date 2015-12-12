@@ -100,7 +100,7 @@ Provides:       php-pecl-apc-devel%{?_isa} = %{version}-%{release}
 These are the files needed to compile programs using APCu.
 
 
-%package -n apcu-panel55u
+%package -n apcu-panel70t
 Summary:       APCu control panel
 Group:         Applications/Internet
 BuildArch:     noarch
@@ -233,7 +233,7 @@ fi
 %{php_ztsincldir}/ext/%{pecl_name}
 %endif
 
-%files -n apcu-panel55u
+%files -n apcu-panel70t
 %defattr(-,root,root,-)
 # Need to restrict access, as it contains a clear password
 %attr(750,apache,root) %dir %{_sysconfdir}/apcu-panel
