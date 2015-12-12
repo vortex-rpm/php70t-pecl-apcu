@@ -15,7 +15,7 @@
 
 Name:           %{php_base}-pecl-apcu
 Summary:        APC User Cache
-Version:        4.0.7
+Version:        5.1.2
 Release:        1.vortex%{?dist}
 Source0:        http://pecl.php.net/get/%{pecl_name}-%{version}.tgz
 Source1:        %{pecl_name}.ini
@@ -105,11 +105,11 @@ Summary:       APCu control panel
 Group:         Applications/Internet
 BuildArch:     noarch
 Requires:      %{name} = %{version}-%{release}
-Requires:      mod_php55u, httpd, %{php_base}-gd
+Requires:      mod_php70t, httpd, %{php_base}-gd
 Obsoletes:      apc-panel < 4
 Provides:       apc-devel = %{version}-%{release}
 
-%description  -n apcu-panel55u
+%description  -n apcu-panel70t
 This package provides the APCu control panel, with Apache
 configuration, available on http://localhost/apcu-panel/
 
@@ -243,6 +243,9 @@ fi
 
 
 %changelog
+* Sat Dec 12 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com - 5.1.2-1.vortex
+- Update to 5.1.2.
+
 * Mon Jul 06 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com - 4.0.7-1.vortex
 - Update to 4.0.7.
 
