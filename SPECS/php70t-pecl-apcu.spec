@@ -16,7 +16,7 @@
 Name:           %{php_base}-pecl-apcu
 Summary:        APC User Cache
 Version:        5.1.2
-Release:        1.vortex%{?dist}
+Release:        2.vortex%{?dist}
 Source0:        http://pecl.php.net/get/%{pecl_name}-%{version}.tgz
 Source1:        %{pecl_name}.ini
 Source2:        %{pecl_name}-panel.conf
@@ -243,6 +243,9 @@ fi
 
 
 %changelog
+* Mon Dec 21 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com - 5.1.2-2.vortex
+- 7.0.1.
+
 * Sat Dec 12 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com - 5.1.2-1.vortex
 - Update to 5.1.2.
 
